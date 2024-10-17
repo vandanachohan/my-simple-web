@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+  background-image: url("https://img.freepik.com/free-vector/watercolor-abstract-floral-background_52683-134424.jpg?size=626&ext=jpg&ga=GA1.1.1887574231.1729036800&semt=ais_hybrid");
+  
+
+  --background: #ffffff;
+  --foreground: #2c2828;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background:BLACK;
+    --foreground: #ededed; 
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
